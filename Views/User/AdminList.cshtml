@@ -1,0 +1,28 @@
+﻿@model List<User>
+<h1>All Admins</h1>
+    <table style="width:100%">
+        <tr>
+            <th style="width:20%; font-weight:900; font-size:25px">Username</th>
+            <th style="width:40%; font-weight:900; font-size:25px">Email</th>
+            <th style="width:20%; font-weight:900; font-size:25px"></th>
+            <th style="width:20%; font-weight:900; font-size:25px"></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+                <td>
+                    <a asp-controller="User" asp-action="Profile" asp-route-id="@item.UserId" class="btn btn-primary">Show profile</a>
+                </td>
+                <td>
+                    <a asp-controller="User" asp-action="Delete" asp-route-id="@item.UserId" class="btn btn-primary">Delete</a>
+                </td>
+                <td>
+                    <a asp-controller="User" asp-action="RemoveAdmin" asp-route-id="@item.UserId" class="btn btn-primary">Remove Admin</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <br />
+    <a href="/home/index" class="btn btn-primary">Back to home</a>

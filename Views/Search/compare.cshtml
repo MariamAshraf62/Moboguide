@@ -1,0 +1,191 @@
+﻿<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Moboguide.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div style="width:100%;">
+        <div style="width:100%;clear:right;">
+            <div class="card-body" style="">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;" colspan="2">
+                                <img src="/images/@ViewBag.mob1.ImagePath" alt="Image of @ViewBag.mob1.MobileName">
+                            </th>
+                            <th style="text-align:center;">
+                                <img src="/images/@ViewBag.mob2.ImagePath" alt="Image of @ViewBag.mob2.MobileName">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;width:20%;">MobileName</td>
+                            <td style="width:40%;">@ViewBag.mob1.MobileName</tdstyle>
+                            <td style="width:40%;">@ViewBag.mob2.MobileName</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Producer</td>
+                            <td>@ViewBag.mob1.Producer</td>
+                            <td>@ViewBag.mob2.Producer</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">NetworkTech</td>
+                            <td>@ViewBag.mob1.NetworkTech</td>
+                            <td>@ViewBag.mob2.NetworkTech</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">ReleaseDate</td>
+                            <td>@ViewBag.mob1.ReleaseDate</td>
+                            <td>@ViewBag.mob2.ReleaseDate</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Dimensions</td>
+                            <td>@ViewBag.mob1.Dimensions</td>
+                            <td>@ViewBag.mob2.Dimensions</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Weight</td>
+                            <td>@ViewBag.mob1.Weight</td>
+                            <td>@ViewBag.mob2.Weight</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Materials</td>
+                            <td>@ViewBag.mob1.materials</td>
+                            <td>@ViewBag.mob2.materials</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">SIM</td>
+                            <td>@ViewBag.mob1.SIM</td>
+                            <td>@ViewBag.mob2.SIM</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">DisplayType</td>
+                            <td>@ViewBag.mob1.DisplayType</td>
+                            <td>@ViewBag.mob2.DisplayType</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">DisplayProtection</td>
+                            <td>@ViewBag.mob1.DisplayProtection</td>
+                            <td>@ViewBag.mob2.DisplayProtection</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">DisplayResolution</td>
+                            <td>@ViewBag.mob1.DisplayResolution</td>
+                            <td>@ViewBag.mob2.DisplayResolution</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">OS</td>
+                            <td>@ViewBag.mob1.OS</td>
+                            <td>@ViewBag.mob2.OS</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">ChipSet</td>
+                            <td>@ViewBag.mob1.ChipSet</td>
+                            <td>@ViewBag.mob2.ChipSet</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">CPU</td>
+                            <td>@ViewBag.mob1.CPU</td>
+                            <td>@ViewBag.mob2.CPU</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">GPU</td>
+                            <td>@ViewBag.mob1.GPU</td>
+                            <td>@ViewBag.mob2.GPU</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">SDCard</td>
+                            <td>@ViewBag.mob1.SDCard</td>
+                            <td>@ViewBag.mob2.SDCard</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Storage Memory</td>
+                            <td>@ViewBag.mob1.Storage_Memory</td>
+                            <td>@ViewBag.mob2.Storage_Memory</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">MainCamera</td>
+                            <td>@ViewBag.mob1.MainCamera</td>
+                            <td>@ViewBag.mob2.MainCamera</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">MainCameraVideo</td>
+                            <td>@ViewBag.mob1.MainCameraVideo</td>
+                            <td>@ViewBag.mob2.MainCameraVideo</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">MainCameraFeatures</td>
+                            <td>@ViewBag.mob1.MainCameraFeatures</td>
+                            <td>@ViewBag.mob2.MainCameraFeatures</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">FrontCamera</td>
+                            <td>@ViewBag.mob1.FrontCamera</td>
+                            <td>@ViewBag.mob2.FrontCamera</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">FrontCameraVideo</td>
+                            <td>@ViewBag.mob1.FrontCameraVideo</td>
+                            <td>@ViewBag.mob2.FrontCameraVideo</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Speakers</td>
+                            <td>@ViewBag.mob1.Speakers</td>
+                            <td>@ViewBag.mob2.Speakers</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Jack</td>
+                            <td>@ViewBag.mob1.Jack</td>
+                            <td>@ViewBag.mob2.Jack</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">WLAN</td>
+                            <td>@ViewBag.mob1.WLAN</td>
+                            <td>@ViewBag.mob2.WLAN</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">USB</td>
+                            <td>@ViewBag.mob1.USB</td>
+                            <td>@ViewBag.mob2.USB</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Sensors</td>
+                            <td>@ViewBag.mob1.Sensors</td>
+                            <td>@ViewBag.mob2.Sensors</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">BatteryType</td>
+                            <td>@ViewBag.mob1.BatteryType</td>
+                            <td>@ViewBag.mob2.BatteryType</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">BatteryCharging</td>
+                            <td>@ViewBag.mob1.BatteryCharging</td>
+                            <td>@ViewBag.mob2.BatteryCharging</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Colors</td>
+                            <td>@ViewBag.mob1.Colors</td>
+                            <td>@ViewBag.mob2.Colors</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">Price</td>
+                            <td>@ViewBag.mob1.Price</td>
+                            <td>@ViewBag.mob2.Price</td>
+                        </tr>
+                        <tr>
+                            <td style="color:orangered;font-weight:bold;">AvgRate</td>
+                            <td>@ViewBag.mob1.AvgRate</td>
+                            <td>@ViewBag.mob2.AvgRate</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="/search/allMobs" class="btn btn-primary">Back</a>
+    <a href="/search/compare?name1=@ViewBag.mob1.MobileName" class="btn btn-primary">compare with another phone</a>
+</body>

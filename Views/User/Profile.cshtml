@@ -1,0 +1,50 @@
+﻿@model User
+@{
+	var IsAdmin = User.IsInRole("Admin");
+	string name = "";
+	if (Context.Request.Cookies["UserName"] != null)
+	{
+		name = Context.Request.Cookies["UserName"];
+	}
+}
+<body>
+	<div class="card">
+		<div class="card-body">
+			<p class="card-text">
+				<dl class="row" >
+					<dt class="col-sm-2" style="font-size:18px;width:10%;">
+						UserName :
+					</dt>
+					<dd class="col-sm-10">
+						@Model.UserName
+				</dd>
+					<dt class="col-sm-2" style="font-size:18px;width:10%;">
+						Email :
+					</dt>
+					<dd class="col-sm-10">
+						@Model.Email
+					</dd>
+			</dl>
+			</p>
+		@foreach(var item in ViewBag.favs)
+			{
+				<div class="card">
+					<a href="/search/details?name=@item.MobileName" style="width:40%; margin-left:auto; margin-right:auto"><img class="card-img-top" src="/images/@item.ImagePath" alt="Card image" style="width:100%;"></a>
+					<div class="card-body" style="text-align: center; font-size: 20px;">
+						<a href="/search/details?name=@item.MobileName">@item.MobileName Specs</a>
+					</div>
+				</div>
+			}
+			@if (!string.IsNullOrEmpty(name) && name == @Model.UserName)
+			{
+				<a asp-controller="User" asp-action="Edit" asp-route-id="@Model.UserId" class="btn btn-primary">Edit</a>
+				<a asp-controller="User" asp-action="Delete" asp-route-id="@Model.UserId" class="btn btn-primary">Delete</a>
+			}
+			@if (IsAdmin)
+			{
+				<a asp-controller="User" asp-action="Delete" asp-route-id="@Model.UserId" class="btn btn-primary">Delete</a>
+			}
+			<a href="/Home/Index" class="btn btn-primary">Back</a>
+		</div>
+	</div>
+</body>

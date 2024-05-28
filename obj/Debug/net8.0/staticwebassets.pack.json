@@ -1,0 +1,361 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\VS code\\Moboguide\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Moboguide.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Moboguide.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\MoboGuide.jpg",
+      "PackagePath": "staticwebassets\\images\\MoboGuide.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\apple-iphone-11.jpg",
+      "PackagePath": "staticwebassets\\images\\apple-iphone-11.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\apple-iphone-13.jpg",
+      "PackagePath": "staticwebassets\\images\\apple-iphone-13.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\apple-iphone-7-plus-r2.jpg",
+      "PackagePath": "staticwebassets\\images\\apple-iphone-7-plus-r2.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\apple-iphone-8.jpg",
+      "PackagePath": "staticwebassets\\images\\apple-iphone-8.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\apple-iphone-xs-max.jpg",
+      "PackagePath": "staticwebassets\\images\\apple-iphone-xs-max.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-a38.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-a38.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-a3s.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-a3s.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-a58.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-a58.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-a78.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-a78.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-f25-pro.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-f25-pro.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-reno11-f.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-reno11-f.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-reno11-pro.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-reno11-pro.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\oppo-reno5-5g.jpg",
+      "PackagePath": "staticwebassets\\images\\oppo-reno5-5g.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\samsung-galaxy-a22.jpg",
+      "PackagePath": "staticwebassets\\images\\samsung-galaxy-a22.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\samsung-galaxy-a55.jpg",
+      "PackagePath": "staticwebassets\\images\\samsung-galaxy-a55.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\samsung-galaxy-m34-5g.jpg",
+      "PackagePath": "staticwebassets\\images\\samsung-galaxy-m34-5g.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\samsung-galaxy-note20-ultra-.jpg",
+      "PackagePath": "staticwebassets\\images\\samsung-galaxy-note20-ultra-.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\samsung-galaxy-s24-ultra-5g.jpg",
+      "PackagePath": "staticwebassets\\images\\samsung-galaxy-s24-ultra-5g.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\xiaomi-14.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi-14.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\xiaomi-poco-f3.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi-poco-f3.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\xiaomi-poco-x6.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi-poco-x6.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\xiaomi-redmi-note-11-global.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi-redmi-note-11-global.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\images\\xiaomi-redmi-note-13-pro-5g.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi-redmi-note-13-pro-5g.jpg"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\VS code\\Moboguide\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Moboguide.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Moboguide.props",
+      "PackagePath": "build\\Moboguide.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Moboguide.props",
+      "PackagePath": "buildMultiTargeting\\Moboguide.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Moboguide.props",
+      "PackagePath": "buildTransitive\\Moboguide.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

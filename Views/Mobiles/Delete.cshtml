@@ -1,0 +1,219 @@
+﻿@model Moboguide.Models.Mobile
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Mobile</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Producer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Producer)
+        </dd>
+        <dt class = "col-sm-2">
+            <img src="/images/@Model.ImagePath" alt="Card image cap" style="width:100px;height:100px; margin-left:auto; margin-right:auto">
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ImagePath)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NetworkTech)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NetworkTech)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dimensions)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dimensions)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.materials)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.materials)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SIM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SIM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DisplayType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DisplayType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DisplayProtection)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DisplayProtection)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DisplayResolution)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DisplayResolution)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ChipSet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ChipSet)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CPU)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CPU)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GPU)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GPU)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SDCard)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SDCard)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Storage_Memory)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Storage_Memory)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MainCamera)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MainCamera)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MainCameraVideo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MainCameraVideo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MainCameraFeatures)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MainCameraFeatures)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FrontCamera)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FrontCamera)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FrontCameraVideo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FrontCameraVideo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Speakers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Speakers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Jack)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Jack)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WLAN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WLAN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.USB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.USB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sensors)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sensors)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BatteryType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BatteryType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BatteryCharging)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BatteryCharging)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Colors)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Colors)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AvgRate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AvgRate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AddedDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AddedDate)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MobileName" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a href="/Search/allMobs" class="btn btn-primary">Back</a>
+    </form>
+</div>

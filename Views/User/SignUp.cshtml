@@ -1,0 +1,51 @@
+﻿
+<form method="post" action="/User/SignUp">
+  <div>
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <div>
+        <label><b>UserName</b></label><br />
+        <input type="text" placeholder="Enter UserName" name="UserName" value="@Model.UserName" required >
+        <br />
+        <span class="alert-danger">@ViewBag.userNote</span>
+    </div>
+    <br />
+    <div>
+        <label><b>Email</b></label><br />
+        <input type="text" placeholder="Enter Email" name="Email" value="@Model.Email" required>
+        <br />
+        <span class="alert-danger">@ViewBag.emailNote</span>
+    </div>
+    <br />
+    <div>
+        <label><b>Password</b></label><br />
+        <input type="password" placeholder="Enter Password" name="Password" value="@Model.Password" required autocomplete="off" >
+        <br />
+        <span class="alert-danger">@ViewBag.passNote</span>
+    </div>
+    <br />
+    <div>
+        <label><b>Re-enter Password</b></label><br />
+        <input type="password" placeholder="Confirm Password" name="confirm" required autocomplete="off">
+        <br />
+        <span class="alert-danger">@ViewBag.confirmNote</span>
+    </div>
+    <br />
+    <div>
+        <input type="checkbox" name="remember" value="1">
+        <label><b>Remember Me For a Month</b></label>
+        <br />
+     <br />
+    </div>
+        <div>
+            Have an account?<a href="/User/LogIn">Login</a>
+            <br />
+        </div>
+        <br />
+    <div>
+        <button type="submit">Sign Up</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,42 @@
+﻿@model User
+<form  method="post" action="/User/Edit">
+    <div>
+        <h1>Edit</h1>
+        <hr>
+        @* <input type="hidden" name="HashedPass" value="@Model.Password"> *@
+        <input type="hidden" name="UserId" value="@Model.UserId">
+        <div>
+            <label><b>UserName</b></label><br />
+            <input type="text" placeholder="Enter UserName" name="UserName" value="@Model.UserName" required>
+            <br />
+            <span class="alert-danger">@ViewBag.userNote</span>
+        </div>
+        <br />
+        <div>
+            <label><b>Email</b></label><br />
+            <input type="text" placeholder="Enter Email" name="Email" value="@Model.Email" required>
+            <br />
+            <span class="alert-danger">@ViewBag.emailNote</span>
+        </div>
+        <br />
+        <div>
+            <label><b>Old Password</b></label><br />
+            <input type="password" placeholder="Enter Old Password" name="OldPassword" required autocomplete="off">
+            <br />
+            <span class="alert-danger">@ViewBag.oldpassNote</span>
+        </div>
+        <div>
+            <label><b>New Password</b></label><br />
+            <input type="password" placeholder="Enter New Password" name="Password" required autocomplete="off">
+            <br />
+            <span class="alert-danger">@ViewBag.newpassNote</span>
+        </div>
+        <br />
+        <div>
+            <input type="submit" value="Save" class="btn btn-primary">
+            <a href="/User/Profile?id=@Model.UserName" class="btn btn-primary">Back</a>
+        </div>
+    </div>
+</form>
+<br />
+

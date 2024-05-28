@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Mobo-Guide";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Moboguide.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div>
+        <div style="text-align:center; margin:0 0;">
+             <img src="~/images/MoboGuide.jpg" style="width:40%;height:350px;"/>
+        </div>
+        <div style="text-align:center;">
+            <span class="alert-danger">@ViewBag.searchNote</span>
+            <br />
+            <form action="/Search/srch" method="post">
+                <input type="text" placeholder="Search Phones..." name="MobileName" style="width:60%;height:50px;border-radius:30px;padding-left:10px;margin-top:0px;">
+                <br />
+                <br />
+                <button class="btn btn-dark">search</button>
+            </form>
+        </div>
+    </div>
+</body>

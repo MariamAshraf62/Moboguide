@@ -1,0 +1,84 @@
+﻿@model List<Mobile>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Moboguide.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color:skyblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            background-color:white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+            width: 300px;
+        }
+
+        .gallery-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .gallery-item label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="font-size:49px;">AllMobs</div>
+    </div>
+    <br />
+    @if (ViewBag.name1 == null)
+    {
+            <div class="gallery">
+        @foreach (var item in Model)
+        {
+            <div class="gallery-item">
+                <a href="/search/details?name=@item.MobileName">
+                    <img class="card-img-top" src="/images/@item.ImagePath" alt="@item.MobileName">
+                    <strong>@item.MobileName Specs</strong>
+                </a>
+            </div>
+        }
+            </div>
+    }
+    else
+    {
+        <div class="gallery">
+            @foreach (var item in Model)
+            {
+                <div class="gallery-item">
+                    <a href="/search/compare?name2=@item.MobileName &name1=@ViewBag.name1">
+                    <img class="card-img-top" src="/images/@item.ImagePath" alt="@item.MobileName">
+                    <strong>@item.MobileName Specs</strong>
+                    </a>
+                </div>
+            }
+        </div>
+    }
+<br />
+<div>
+    <a href="/home/index" class="btn btn-primary">Back to home</a>
+</div>
+</body>

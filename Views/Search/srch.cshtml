@@ -1,0 +1,355 @@
+﻿@model ViewModel
+@{
+    User? user = null;
+    string name = "";
+    if (Context.Request.Cookies["UserName"] != null)
+    {
+        name = Context.Request.Cookies["UserName"];
+        Pcontext context = new Pcontext();
+        user = context.users.Where(a => a.UserName == name).SingleOrDefault();
+    }
+    bool IsAdmin = User.IsInRole("Admin");
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.mobile.MobileName</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Moboguide.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="card">
+        <img src="/images/@Model.mobile.ImagePath" alt="Card image cap" style="width:25%;height:300px; margin-left:auto; margin-right:auto">
+        <div class="card-body">
+            <h1 class="card-title" style="color:indianred; text-align:center" >@Model.mobile.MobileName Specs</h1>
+            <p class="card-text">
+                <dl class="row">
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Rate:
+                    </dt>
+                    <dd class="col-sm-10" >
+                        <form asp-action="favo" asp-controller="Search">
+                            <select asp-for="@Model.mobile_user.Rate">
+                                @{
+                                    for (float i = 1; i <= 5; ++i)
+                                    {
+                                        if (Model.mobile_user != null && i == Model.mobile_user.Rate)
+                                        {
+                                            <option value="@i" selected>@i</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@i">@i</option>
+                                        }
+                                    }
+                                }
+                            </select>
+                            <input asp-for="@Model.mobile.MobileName" hidden>
+                            <input type="submit" value="Rate" class="btn-outline-success">
+                            <span class="alert-danger">@ViewBag.err</span>
+                        </form>
+                            <div style="text-align:right;">
+                            <form asp-action="favo" asp-controller="Search">
+                                <input asp-for="@Model.mobile.MobileName" hidden>
+                                @if (Model.mobile_user != null && Model.mobile_user.IsFavorite)
+                                {
+                                    <input type="hidden" asp-for="@Model.mobile_user.IsFavorite" value="false">
+                                    <input type="submit" value="remove from favorites" class="btn btn-outline-success">
+                                }
+                                else
+                                {
+                                    <input type="hidden" asp-for="@Model.mobile_user.IsFavorite" value="true">
+                                    <input type="submit" value="add to favorites" class="btn btn-outline-success">
+                                }
+                            </form>
+                        </div>
+                    </dd>
+                    <dt class="col-sm-2" style="font-size:18px">
+                        MobileName:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.MobileName
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Producer:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Producer
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        NetworkTech:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.NetworkTech
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        ReleaseDate:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.ReleaseDate
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Dimensions:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Dimensions
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Weight:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Weight
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Materials:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.materials
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        SIM:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.SIM
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        DisplayType:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.DisplayType
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        DisplayProtection:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.DisplayProtection
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        DisplayResolution:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.DisplayResolution
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        OS:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.OS
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        ChipSet:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.ChipSet
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        CPU:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.CPU
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        GPU:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.GPU
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        SDCard:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.SDCard
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Storage Memory:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Storage_Memory
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        MainCamera:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.MainCamera
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        MainCameraVideo:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.MainCameraVideo
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        MainCameraFeatures:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.MainCameraFeatures
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        FrontCamera:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.FrontCamera
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        FrontCameraVideo:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.FrontCameraVideo
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Speakers:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Speakers
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Jack:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Jack
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        WLAN:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.WLAN
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        USB:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.USB
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Sensors:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Sensors
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        BatteryType:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.BatteryType
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        BatteryCharging:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.BatteryCharging
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Colors:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Colors
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        Price:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.Price
+                    </dd>
+
+                    <dt class="col-sm-2" style="font-size:18px">
+                        AvgRate:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.mobile.AvgRate
+                    </dd>
+                </dl>
+            </p>
+            @if (IsAdmin)
+            {
+                <a asp-controller="Mobiles" asp-action="Edit" asp-route-id="@Model.mobile.MobileName" class="btn btn-primary">Edit</a>
+                <a asp-controller="Mobiles" asp-action="Delete" asp-route-id="@Model.mobile.MobileName" class="btn btn-primary">Delete</a>
+            }
+            <a href="/Search/compare?name1=@Model.mobile.MobileName" class="btn btn-primary">Compare</a>
+            <br />
+            <br />
+            <div id="comments">
+            @if (TempData["commentNote"] != null)
+            {
+                <strong class="alert-danger">@TempData["commentNote"]</strong> 
+            }
+                <div>
+                    <form asp-action="Add" asp-controller="Comment">
+                        <textarea rows="5" style="width:100%;" name="comment" placeholder="Enter your comment here..."></textarea>
+                        <br />
+                        <input type="hidden" name="mobileName" value="@Model.mobile.MobileName">
+                        @if (user != null)
+                        {
+                            <input type="hidden" name="id" value="@user.UserId"> 
+                        }
+                        <div style="text-align:right;"><input type="submit" class="btn btn-dark btn-outline-light"></div>
+                    </form>
+                </div>
+                @if(ViewBag.cmmnts != null)
+                {
+                    <div>
+                        @foreach (var cmnt in ViewBag.cmmnts as List<KeyValuePair<string, Comment>>)
+                        {
+                            <div style="border:1px solid lightgrey;margin:10px 0;padding:5px;">
+                                <div style="float:left;width:50%;">
+                                    <a style="color:grey;" asp-controller="User" asp-action="Profile" asp-route-id=@cmnt.Key><b>@cmnt.Key</b></a>
+                                </div>
+                                <div style="float:left;width:50%;color:grey;text-align:right;"><b>@cmnt.Value.DateTime</b></div>
+                                <div style="margin-top:40px;padding-left:20px;">@cmnt.Value.Content</div>
+                                @if (TempData["editCheck"] != null && TempData["editCheck"].ToString() == cmnt.Value.Id.ToString())
+                                {
+                                    <div><form method="post" asp-controller="Comment" asp-action="Update">
+                                            <input type="text" style="width:100%;" name="content" value="@cmnt.Value.Content">
+                                            <input type="hidden" name="id" value="@cmnt.Value.Id" />
+                                            <input type="submit" />
+                                    </form></div> 
+                                }
+                                <div style="text-align:right;">
+                                    @if (!string.IsNullOrEmpty(name) && cmnt.Key == name)
+                                    {
+                                        <a href="/Comment/Update?id=@cmnt.Value.Id&mobileName=@Model.mobile.MobileName" class="btn btn-info">edit</a>
+                                    }
+                                    @if (IsAdmin || (!string.IsNullOrEmpty(name) && cmnt.Key == name))
+                                    {
+                                        <a href="/Comment/Delete?id=@cmnt.Value.Id&mobileName=@Model.mobile.MobileName" class="btn btn-close"></a>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+            <a href="/search/allMobs" class="btn btn-primary">back</a>
+        </div>
+    </div>
+</body>
